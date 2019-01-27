@@ -90,10 +90,10 @@ let car = {
 };
 
 if (car.age > 5) {
-    needRepair = true;
+    car.needRepair = true;
     console.log('Need Repair');
 } else {
-    needRepair = false;
+    car.needRepair = false;
 }
 
 
@@ -109,6 +109,8 @@ let item = {
     price: '100$',
     discount: '15%'
 };
+let priceValue,
+    discountValue;
 
 if (item.discount) {
     priceValue = parseFloat(item.price);
